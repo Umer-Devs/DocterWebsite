@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Send, CheckCircle } from 'lucide-react';
+import { EmailFormq } from '../assets';
 
 const EmailForm = ({
   title = "Subscribe to Our Newsletter",
@@ -107,7 +108,7 @@ const EmailForm = ({
           {/* Left Side - Content */}
           <motion.div
             variants={leftVariants}
-            className="bg-gradient-to-br from-pink-100 via-purple-50 to-pink-100 px-8 md:px-12 lg:px-16   flex items-center"
+            className="bg-two px-8 md:px-12 lg:px-16   flex items-center"
           >
             <div className="w-full max-w-xl">
               {/* Title */}
@@ -245,22 +246,17 @@ const EmailForm = ({
               className="w-full h-full"
             >
               <img
-                src={image}
+                src={EmailFormq}
                 alt="Newsletter"
                 className="w-full h-full object-cover"
               />
             </motion.div>
 
             {/* Image Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+           
 
             {/* Decorative Book Stack Effect */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-              className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#4a2c7c]/30 to-transparent backdrop-blur-sm"
-            />
+           
           </motion.div>
         </div>
       </div>

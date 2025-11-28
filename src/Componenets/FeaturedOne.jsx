@@ -5,9 +5,10 @@ import { BookOne } from '../assets';
 
 const FeaturedOne = ({
   badge = "Featured Book",
-  title = "Birds Gonna Be Happy",
-  author = "Timbur Hood",
-  description = '"Birds Gonna Be Happy" is a heart-warming collection of reflections inspired by the simple joy of nature. Through gentle storytelling and thoughtful moments, the book reminds readers that happiness can be found in the smallest everyday scenes—like birds greeting the morning with hope. It\'s a comforting read that lifts your mood, encourages gratitude, and inspires a lighter, more peaceful outlook on life.',
+  title = "Project",
+  titleTwo = "Hail Mary",
+  author = "By Andy Weir",
+  description = '"Ryland Grace wakes up alone on a spaceship, with no memory of who he is or how he got there. As fragments of his past resurface, he discovers he is humanity’s last chance at survival. Project Hail Mary blends mystery, science, danger, and unexpected friendship into a thrilling interstellar adventure that pushes the limits of imagination."',
   image = "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=700&fit=crop",
   buttonText = "VIEW MORE",
   buttonLink = "/book/birds-gonna-be-happy",
@@ -119,9 +120,10 @@ const FeaturedOne = ({
           >
             {/* Title */}
             <motion.div variants={itemVariants}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-purple leading-tight mb-3">
+              <h2 className="text-4xl md:text-5xl  font-bold text-primary-purple  mb-1">
                 {title}
-              </h1>
+              </h2>
+              <h2 className='text-4xl md:text-5xl lg:text-6xl  font-bold text-primary-orange  mb-1'>{titleTwo}</h2>
               <motion.p
                 variants={itemVariants}
                 className="text-primary-orange tracking-wider font-semibold text-lg md:text-xl tracking-wide Capitilize"

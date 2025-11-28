@@ -213,16 +213,16 @@ const Home = () => {
       <section>
         <FeaturedOne/>
       </section>
-      <section className="mt-[5%]">
+      <section className="mt-[3%]">
         <FeatureTwo/>
       </section>
-      <section className="mt-[5%]">
+      <section className="mt-[3%]">
         <ContactForm/>
       </section>
-      <section className="mt-[5%]">
+      <section className="mt-[3%]">
         <EmailForm/>
       </section>
-      <section className="mt-[5%]">
+      <section className="mt-[3%]">
         <Footer/>
       </section>
 

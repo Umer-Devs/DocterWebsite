@@ -50,10 +50,10 @@ const DynamicBookSlider = ({
     appendDots: (dots) => (
       <div className="mt-12 relative flex items-center justify-center">
         <ul className="flex justify-center items-center gap-3"> {dots} </ul>
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden md:block">
+        <div className=" absolute right-0 top-1/2 -translate-y-1/2 hidden md:block">
           <Link
             to="/books"
-            className="text-primary-orange font-bold text-sm md:text-base flex items-center gap-2 hover:gap-3 transition-all duration-300"
+            className="     text-primary-orange font-bold text-sm md:text-base flex items-center gap-2 hover:gap-3 transition-all duration-300"
           >
             View More <ArrowRight size={20} />
           </Link>
@@ -62,14 +62,14 @@ const DynamicBookSlider = ({
     ),
 
     customPaging: (i) => (
-      <div className="flex items-center justify-center cursor-pointer ">
+      <div className="flex items-center justify-center cursor-pointer  w-12 h-12 z-1000 ">
         <motion.div
           initial={false}
           animate={{
             scale: i === currentSlide ? 1 : 1,
           }}
-          className={`rounded-full flex items-center justify-center transition-all duration-300 ${i === currentSlide
-              ? "w-8 h-8 border border-primary-orange p-3"
+          className={`rounded-full mb-10  flex  items-center justify-center transition-all duration-300 ${i === currentSlide
+              ? "w-8 h-8 border  border-primary-orange  "
               : "w-4 h-4"
             }`}
         >
@@ -92,7 +92,7 @@ const DynamicBookSlider = ({
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section className=" bg-white overflow-hidden">
       <div className="custom-padding w-full">
 
         {/* Header - ab yeh bhi dynamic hai lekin style same */}
@@ -103,7 +103,7 @@ const DynamicBookSlider = ({
           viewport={{ once:true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-blue mb-4 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary-blue mb-4 tracking-wide">
             {title || "Bestsellers"}
           </h2>
           <p className="text-primary-purple/70 text-base md:text-lg max-w-2xl mx-auto font-medium">
@@ -151,14 +151,14 @@ const DynamicBookSlider = ({
           </Slider>
         </motion.div>
 
-        {/* Mobile View More */}
-        <div className="mt-8 flex justify-center md:hidden">
-          <Link
+       
+        <div className="mt-8 flex justify-center ">
+          {/* <Link
             to="/books"
             className="text-primary-orange font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all duration-300"
           >
             View More <ArrowRight size={18} />
-          </Link>
+          </Link> */}
         </div>
 
       </div>

@@ -114,7 +114,7 @@ const ContactForm = ({
       <div className="custom-padding">
         <motion.div
           variants={itemVariants}
-          className="bg-gradient-to-br from-pink-50 via-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl"
+          className="bg-two via-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center mb-10">

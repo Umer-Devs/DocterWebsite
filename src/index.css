@@ -61,6 +61,10 @@ background: linear-gradient(90deg, rgba(255, 229, 229, 1) 0%, rgba(245, 255, 254
   background: #ED553B;
 background: linear-gradient(90deg, rgba(237, 85, 59, 1) 0%, rgba(255, 135, 114, 1) 100%);
 }
+.bg-two{
+  background: #FBEEEE;
+background: linear-gradient(90deg, rgba(251, 238, 238, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(251, 238, 238, 1) 100%);
+}
 .border-gradient {
   border: 3px solid transparent;
   border-radius: 6px;

@@ -63,9 +63,9 @@ const Footer = ({
       whileInView="visible"
       viewport={{ once: true, margin: '-50px' }}
       variants={containerVariants}
-      className="bg-gradient-to-br from-pink-50 via-purple-50 to-pink-100 py-16 md:py-20 px-6 md:px-8 lg:px-12"
+      className="bg-two py-16 md:py-20 px-6 md:px-8 lg:px-12"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="custom-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
           {/* Left Section - Logo & Tagline */}
           <motion.div variants={itemVariants} className="space-y-6">
