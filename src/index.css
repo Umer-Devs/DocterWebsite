@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+/* ✔ Correct place */
+@custom-variant max-428 (max-width: 428px);
+
+@theme {
+  --font-space-grotesk: "Inter", sans-serif;
+  --color-primary-blue: #393280;
+  --color-primary-orange: #ED553B;
+  --color-primary-purple: #6A4C9C;
+}
+
+/* Base styles */
+@layer base {
+  body {
+    overflow-x: hidden !important;
+    font-family: var(--font-space-grotesk);
+  }
+}
+
+/* Custom components */
+@layer components {
+  .custom-padding {
+    @apply px-4 md:px-9 lg:px-16 xl:px-20;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl;
+  }
+
+  p {
+    @apply md:text-lg;
+  }
+
+  .floating-element {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+/* Utilities */
+@layer utilities {
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+}
+
+/* Backgrounds */
+.bg-hero {
+ background: #FFE5E5;
+background: linear-gradient(90deg, rgba(255, 229, 229, 1) 0%, rgba(245, 255, 254, 1) 22%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+}
+
+.bg-one {
+  background: #FBEEEE;
+  background: linear-gradient(90deg, rgba(251,238,238,1) 0%, rgba(247,255,254,1) 100%);
+}
+.btn-bg{
+  background: #ED553B;
+background: linear-gradient(90deg, rgba(237, 85, 59, 1) 0%, rgba(255, 135, 114, 1) 100%);
+}
+.border-gradient {
+  border: 3px solid transparent;
+  border-radius: 6px;
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #ED553B, #FF8772) border-box;
+     border-radius: calc(infinity * 1px);
+}
