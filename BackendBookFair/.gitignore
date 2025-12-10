@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build files (agar front-end build hai)
+dist/
+build/
+
+# Optional: IDE/editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional: npm cache
+.npm/
